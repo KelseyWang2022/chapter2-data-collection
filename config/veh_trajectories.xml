@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-10-27 17:37:37 by Eclipse SUMO GUI Version 1.19.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="D:\Copy\OneDrive\桌面\my_sumo_project\config\111.net.xml"/>
+        <route-files value="D:\Copy\OneDrive\桌面\my_sumo_project\config\dynamic_route.rou.xml"/>
+    </input>
+
+    <output>
+        <fcd-output value="D:\Copy\OneDrive\桌面\my_sumo_project\config\veh_trajectories.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+
+</configuration>
+-->
+
+<fcd-export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/fcd_file.xsd">
+</fcd-export>

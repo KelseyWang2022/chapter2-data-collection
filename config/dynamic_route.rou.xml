@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes><vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="4.5" maxSpeed="33.45" color="0,0,1" /><route id="dynamic_route" edges="769108790 22715715" /></routes>

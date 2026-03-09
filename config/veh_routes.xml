@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-04-11 10:46:38 by Eclipse SUMO GUI Version 1.19.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="D:\Copy\OneDrive\桌面\my_sumo_project\config\111.net.xml"/>
+        <route-files value="D:\Copy\OneDrive\桌面\my_sumo_project\config\dynamic_route.rou.xml"/>
+    </input>
+
+    <output>
+        <vehroute-output value="D:\Copy\OneDrive\桌面\my_sumo_project\config\veh_routes.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+</routes>

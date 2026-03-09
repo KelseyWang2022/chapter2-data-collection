@@ -1,0 +1,19 @@
+1.config.sumocfg是主要的运行文件，运行方法是：
+    首先进入所在的文件夹cd /d "D:\Copy\OneDrive\桌面\my_sumo_project\config"；
+    其次直接运行即可sumo-gui -c config.sumocfg
+2.主要的文件解释
+    111.net.xml是路网文件，即所研究的区域的地图
+    route_multitype.rou.xml是车辆的配置文件，主要设置的是车、货车和摩托以及速度上限等
+    config.sumocfg是主配置文件，既设置路网的调取路径和车辆配置文件的调取路径
+——————————————————————————————————————————
+
+3. 改进
+这里主要是改进动态仿真，我们基于 travel_time 推导的拥堵程度生成动态仿真的路线文件dynamic_route_multitype.rou.xml
+  
+
+route_multitype.rou.xml是静态
+
+
+4. 改进
+因为我希望在sumo仿真的时候保留车辆运行角度以实现变道冲突检测，所以sumo仿真的运行命令应该改为
+sumo -c config.sumocfg --fcd-output vehicle_trajectories.xml
