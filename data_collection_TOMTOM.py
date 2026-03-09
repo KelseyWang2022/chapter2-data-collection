@@ -5,8 +5,8 @@ from datetime import datetime
 import os
 
 # the configuration, you can change the parameters here
-TOMTOM_API_KEY = "KEhcnCP982qPhYNbsKAM12DltqJHheDq"  # the key from TOMTOM
-POINT = (45.786685, 4.888233)  # the Latitude and longitude of the position where you want to collect data
+TOMTOM_API_KEY = ""  # the key from TOMTOM
+POINT =   # the Latitude and longitude of the position where you want to collect data
 OUTPUT_DIR = "traffic_data"
 COLLECTION_INTERVAL = 60  # the data will be collected every minute (every 60 seconds)
 TOTAL_DURATION = 10800  # the total duration for data collection in seconds (1 hour)
@@ -74,19 +74,20 @@ def run_monitor():
                 f"[{info['timestamp']}] current speed: {info['current_speed']} km/h | flow: {info['flow']} vehicles/minute ")
             records.append(info)
         else:
-            print("⚠️ the data of this time is not available, skip this minute. ")
+            print("the data of this time is not available ")
 
         time.sleep(COLLECTION_INTERVAL)
 
     # Save to CSV
     df = pd.DataFrame(records)
-    # filename = f"RD383_Villeurbanne_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
-    filename = f"RD383_Villeurbanne_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
+    # filename = f"{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
+    filename = f"{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
     filepath = os.path.join(OUTPUT_DIR, filename)
     df.to_csv(filepath, index=False)
-    print(f"\n✅ data have been saved in : {filepath}")
+    print(f"\n data have been saved in : {filepath}")
     print(df)
 
 
 if __name__ == "__main__":
     run_monitor()
+
